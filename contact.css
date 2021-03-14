@@ -1,0 +1,128 @@
+#contact {
+    width: 100%;
+    /* height: 400px; */
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+#contact a {
+    display: block;
+    width: auto;
+}
+
+
+#contact h1 {
+    /* background-color: antiquewhite; */
+    font-size: 5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, system-ui, -apple-system;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: 0.25s;
+    display: inline-block
+}
+
+#contact h1 span.h1-box {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    border: 4px solid #1c1c1c;
+    top: 50%;
+    left: -100%;
+    border-left: none;
+    transition: calc(var(--delay) * 0.5s) cubic-bezier(.76,0,1,.27);
+    border-right: none;
+}
+
+#contact .wrapper a:hover  span.h1-box {
+    left: 0;
+}
+
+.social-icons {
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    max-width: 600px;
+    height: 150px;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.social-icons .social-links {
+    height: 100%;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    text-transform: uppercase;
+}
+
+.social-icons .social-links a {
+    color: #1c1c1c;
+    font-size: 0.85em;
+}
+
+@media screen and (max-width: 940px) {
+    #contact {
+        top: 550px;
+    }
+    #contact h1 {
+        font-size: 4em;
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    #contact {
+        top: 560px;
+    }
+    #contact h1 {
+        font-size: 3em;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    #contact {
+        top: 550px;
+    }
+    #contact h1 {
+        font-size: 2.0em;
+    }
+
+    .social-icons {
+         /* background-color: red; */
+         height: 180px;
+         /* justify-content: center; */
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #contact {
+        top: 600px;
+    }
+    #contact h1 {
+        font-size: 1.5em;
+    }
+
+    #contact h4 {
+        font-size: 0.75em;
+    }
+
+    .social-icons {
+         /* background-color: red; */
+         height: 180px;
+         /* justify-content: center; */
+    }
+}
